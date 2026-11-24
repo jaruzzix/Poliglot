@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poliglot - Онлайн школа английского языка</title>
+</head>
+<body>
+    <header>
+            <div class="logo-image"></div>
+            <nav>
+                <a href="#about" class="navigation-item">О нас</a>
+                <a href="#courses" class="navigation-item">Курсы</a>
+                <a href="#teachers" class="navigation-item">Преподаватели</a>
+                <a href="#socnets" class="navigation-item">Наши соцсети</a>
+            </nav>
+            <div id="main-phone-number">+7(988) 123-45-67</div>
+    </header>
+
+    <main>
+        <div class="frosted-glass" id="h1-title-container">
+            <h1>Научись английскому <strong>с нуля</strong> до уровня носителя</h1>
+            <h2>Онлайн школа по <strong>английскому языку</strong></h2>
+        </div>
+        <button class="red-button" id="free-lesson-button">Записаться на бесплатный урок</button>
+    </main>
+
+    <div id="about">
+        <div id="about-title">
+            <h2>Начать изучать английский <span>просто</span></h2>
+            <h3>Обучим от первого слова до свободного разговора</h3>
+        </div>
+
+        <ul id="about-advantages">
+            <li>
+                <div class="adv-item-point"></div>
+                <p>Наши преподаватели имеют опыт обучения более 3 лет</p>
+            </li>
+            <li>
+                <div class="adv-item-point"></div>
+                <p>Обучаем детей и взрослых</p>
+            </li>
+            <li>
+                <div class="adv-item-point"></div>
+                <p>Готовим к олимпиадам и экзаменам (ОГЭ, ЕГЭ)</p>
+            </li>
+        </ul>
+
+        <div id="graduates">
+            <div class="frosted-glass" id="grad-contain1">
+                <p>Более <span>1000</span> довольных выпускников</p>
+            </div>
+            <div class="frosted-glass" id="grad-contain2">
+                <p>Начните говорить на английском уже сегодня</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="courses">
+        <div class="stick-line"></div>
+        <div id="courses-container"></div>
+        <div class="stick-line"></div>
+    </div>
+
+    <div id="teachers">
+        <h2 id="teachers-title">Наши преподаватели</h2>
+        <div id="teachers-container">
+            <div id="teachers-line"></div>
+            <div id="teacher-info">
+                <div id="teacher-info-title">
+                    <h3 id="teacher-name"></h3>
+                    <h4 id="teacher-specialization"></h4>
+                </div>
+                <div id="teacher-about-container">
+                    <h5 class="teacher-infobox-title">О себе</h5>
+                    <p></p>
+                </div>
+                <div id="teacher-skills-container">
+                    <h5 class="teacher-infobox-title">Навыки</h5>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="socnets">
+        <h2>Переходиите в наши соцсети</h2>
+        <h3>Здесь мы рассказываем много <span>интересного</span></h3>
+        <ul id="socnets-list">
+            <li id="tik-tok-logo"></li>
+            <li id="vk-logo"></li>
+            <li id="telegram"></li>
+            <li id="max"></li>
+        </ul>
+    </div>
+
+    <footer>
+        <div id="footer-nav">
+            <div class="logo-image"></div>
+            <nav>
+                <a href="#about" class="navigation-item">О нас</a>
+                <a href="#courses" class="navigation-item">Курсы</a>
+                <a href="#teachers" class="navigation-item">Преподаватели</a>
+                <a href="#socnets" class="navigation-item">Наши соцсети</a>
+            </nav>
+        </div>
+        <div id="footer-phone-number">
+            <h2>Звоните по номеру телефона</h2>
+            <p>+7(988) 123-45-67</p>
+        </div>
+        <div id="footer-messagers">
+            <h2>Наши мессенджеры</h2>
+            <ul id="footer-messagers-list">
+            </ul>
+        </div>
+        <h2>Заполните форму, и мы свяжемся с вами</h2>
+        <form action="/submit" method="post" id="footer-form">
+            <div id="input-phone-container" class="form-group">
+                <label for="input-phone">Номер телефона</label>
+                <input type="tel" name="phone" id="input-phone" placeholder="+7(000) 000-00-00" autocomplete="tel" required>
+            </div>
+            
+            <div id="input-name-container" class="form-group">
+                <label for="input-name">ФИО</label>
+                <input type="text" name="name" id="input-name" placeholder="Иванов Иван Иванович" autocomplete="name" required>
+            </div>
+
+            <div id="input-question-container" class="form-group">
+                <label for="input-question">Что хотите узнать</label>
+                <input type="text" name="question" id="input-question" placeholder="Хочу подтянуть разговорный английский для путешествий!">
+            </div>
+            
+            <div id="checkbox-container" class="form-group">
+                <input type="checkbox" name="privacy-policy-accept" id="privacy-policy-accept" required>
+                <label for="privacy-policy-accept">
+                    <span class="custom-checkbox"></span>
+                    <span class="checkbox-text">
+                        Я согласен с <a href="/privacy-policy" target="_blank">политикой конфиденциальности</a> и даю согласие на <a href="/user-agreement" target="_blank">обработку персональных данных</a>
+                    </span>
+                </label>
+            </div>
+            
+            <div id="submit-button-container" class="form-group">
+                <button type="submit" id="submit-button">Отправить</button>
+            </div>
+        </form>
+
+        <p id="footer-signature">Изучайте английский вместе с нами :)</p>
+        <div id="copyright-container">
+            <p id="copyright">&copy; 2026 «Polyglot». Все права защищены</p>
+            <ul id="terms-and-policy">
+                <li><a href="/privacy-policy" target="_blank">Политика конфиденциальности</a></li>
+                <li><a href="/user-agreement" target="_blank">Пользовательское соглашение</a></li>
+            </ul>
+        </div>
+            
+    </footer>
+
+</body>
+</html>
